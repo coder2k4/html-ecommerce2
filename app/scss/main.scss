@@ -4,6 +4,103 @@
 @import "libs";
 @import "config"; // Всегда после библиотек
 
+@import "index_page/section_home";
+@import "index_page/section_featured";
+@import "index_page/section_collection";
+@import "index_page/section_women";
+@import "index_page/section_offer";
+@import "index_page/section_new";
+@import "index_page/section_newsletter";
+@import "index_page/section_footer";
+
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-100);
+  background-color: var(--dark-color-lighten);
+}
+
+.scrolled-header {
+  background-color: var(--white-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    position: fixed;
+    top: var(--header-height);
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    padding: 32px;
+    background-color: var(--white-color);
+    transition: .5s;
+
+    @media screen and (min-width: 768px){
+      margin-left: auto;
+      height: auto;
+      width: auto;
+      padding: 0;
+      background-color: transparent;
+      position: initial;
+    }
+
+    &.show {
+      left: 0;
+    }
+  }
+
+  &__list{
+    @media screen and (min-width: 768px){
+      display: flex;
+    }
+  }
+
+  &__item {
+    margin-bottom: var(--m-4);
+    @media screen and (min-width: 768px){
+      margin-bottom: 0;
+      margin-right: var(--m-2);
+    }
+  }
+
+  &__link {
+    color: var(--second-color);
+    &.active {
+      color: var(--first-color);
+      font-weight: var(--font-bold);
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        bottom: -2px;
+        left: 45%;
+        width: 4px;
+        height: 4px;
+        background-color: var(--dark-color);
+        border-radius: 50px;
+      }
+    }
+  }
+
+  &__logo {
+    font-weight: var(--font-semi-bold);
+  }
+
+  &__toggle, &__shop {
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+}
 
 
 @import "media"; // Всегда вконце

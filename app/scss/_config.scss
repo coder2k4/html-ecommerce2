@@ -11,11 +11,13 @@
   color: var(--white-color);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
+
+  margin: var(--header-height) 0 0 0;
 
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -31,9 +33,11 @@ body {
   input, textarea {
     border: var(--gray-color) 1px solid;
     outline: none;
+
     &:focus:required:invalid {
       border-color: var(--invalid-color);
     }
+
     &:required:valid {
       border-color: var(--valid-color);
     }
@@ -44,9 +48,15 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
+
   &.img-width {
     width: 100%;
   }
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .text-center {
@@ -57,23 +67,92 @@ b, strong {
   font-weight: var(--font-bold);
 }
 
-h1,h2,h3,ul,p{
+h1, h2, h3, ul, p {
   margin: 0;
 }
 
-ul{
+ul {
   padding: 0;
   list-style: none;
 }
 
-a{
+a {
   color: var(--dark-color);
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
 .section {
-  padding: 3rem 0;
+  padding: var(--p-4) 0 var(--p-2);
+}
+
+.section-title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--m-4);
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 3px;
+  top: -16px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--dark-color);
+}
+
+.grid-container {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 30px;
+  width: calc(100% - 60px);
+  margin-left: var(--m-3);
+  margin-right: var(--m-3);
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.button {
+  display: inline-block;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: var(--p-1) var(--p-2);
+  font-weight: var(--font-medium);
+  border-radius: 8px;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-8px);
+    color: var(--first-color-light);
+  }
+}
+
+.button-light {
+  display: inline-flex;
+  color: var(--dark-color);
+  font-weight: var(--font-bold);
+  align-items: center;
+  .button-icon {
+    font-size: 18px;
+    margin-left: var(--m-1);
+    transition: .3s;
+  }
+
+  &:hover .button-icon {
+    margin-left: var(--m-2);
+  }
 }

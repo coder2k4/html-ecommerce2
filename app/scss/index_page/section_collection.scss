@@ -1,0 +1,47 @@
+.collection {
+  &__container {
+    row-gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    @media screen and (min-width: 576px){
+      grid-template-columns: repeat(auto-fit, minmax(415px, 497px));
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    height: 328px;
+    background-color: var(--dark-color-lighten);
+    padding: 32px;
+    border-radius: 8px;
+    transition: .3s;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  &__data {
+    align-self: flex-end;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 210px;
+  }
+
+  &__name {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--m-1);
+
+  }
+
+  &__description {
+    margin-bottom: var(--m-2);
+  }
+
+}

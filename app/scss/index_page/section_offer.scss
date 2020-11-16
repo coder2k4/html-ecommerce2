@@ -1,0 +1,30 @@
+.offer {
+  &__container {
+    grid-template-columns: 55% 45%;
+    column-gap: 0;
+    background-color: var(--dark-color-lighten);
+    border-radius: 8px;
+    justify-content: center;
+    @media screen and (min-width: 576px){
+      grid-template-columns: max-content max-content;
+    }
+  }
+
+  &__data {
+    padding: var(--p-4) 0 var(--p-4) var(--p-2);
+  }
+
+  &__title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: var(--m-1);
+  }
+
+  &__description {
+    margin-bottom: var(--m-4);
+
+  }
+
+  &__img {
+    width: 153px;
+  }
+}

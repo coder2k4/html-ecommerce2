@@ -1,44 +1,46 @@
 /*===== VARIABLES CSS =====*/
 
 /*===== Font weight =====*/
-:root{
+:root {
 
   --header-height: 30px;
 
   /*===== Colors =====*/
-  --first-color: #3a1b70;
-  --first-color-light: #7b39ef;
-  --second-color: #201e62;
-  --second-color-light: #504cf1;
+  --first-color: #a04028;
+  --first-color-light: #f6633e;
+  --second-color: #72322d;
+  --second-color-light: #d96158;
 
-  --white-color: #FAFAFF;
+  --white-color: #FFFFFF;
   --gray-color: #b4b4b5;
-  --dark-color: #101010;
-  --dark-color-light: #606060;
+  --dark-color: #141414;
+  --dark-color-light: #8a8a8a;
+  --dark-color-lighten: #f2f2f2;
 
   --valid-color: #01bf01;
   --invalid-color: #e00101;
 
 
   /*===== Font and typography =====*/
-  --body-font: 'roboto', sans-serif;
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 30px;
+  --h2-font-size: 25px;
+  --h3-font-size: 20px;
   --biggest-font-size: 30px;
-  --h1-font-size: 20px;
-  --h2-font-size: 18px;
-  --h3-font-size: 16px;
   --normal-font-size: 14px;
   --small-font-size: 12px;
   --smaller-font-size: 10px;
 
   /*===== Typography > 768 =====*/
-  @media screen and (min-width: 768px){
-      --biggest-font-size: 60px;
-      --h1-font-size: 25px;
-      --h2-font-size: 20px;
-      --h3-font-size: 18px;
-      --normal-font-size: 16px;
-      --small-font-size: 14px;
-      --smaller-font-size: 12px;
+  @media screen and (min-width: 768px) {
+    --h1-font-size: 35px;
+    --h2-font-size: 30px;
+    --h3-font-size: 25px;
+
+    --biggest-font-size: 60px;
+    --normal-font-size: 16px;
+    --small-font-size: 14px;
+    --smaller-font-size: 12px;
   }
 
   /*===== Font weight =====*/
@@ -62,12 +64,10 @@
   --z-1: 1;
   --z-10: 10;
   --z-100: 100;
+
+  /*===== Rotate img =====*/
+  --rotate-img: rotate(-30deg)
 }
-
-
-
-
-
 
 
 // Настройка Bootstrap переменных from "app/libs/bootstrap/scss/_variables.scss"

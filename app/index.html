@@ -3,55 +3,295 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
 
 
-	<title>Starter html template</title>
-	<meta name="description" content="">
+  <title>Ecommerce responsive mobile first</title>
+  <meta name="description" content="">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Images -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Ваш CSS -->
-	<link rel="stylesheet" href="css/main.css">
+  <!-- Images -->
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <!-- Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+
+  <!--	BOXICONS	-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Ваш CSS -->
+  <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
 
-	<!-- Ваш HTML -->
-	<div class="container">
-		<div class="row">
-			<div class="col-8 offset-2">
-				<h1>Пустой стартовый шаблон для кастомной разработки верстки под любые задачи</h1>
-			</div>
-		</div>
-	</div>
+<!--===== HEADER =====-->
+<header class="header" id="header">
+  <nav class="nav grid-container">
+    <div class="nav__toggle" id="nav-toggle">
+      <i class='bx bxs-grid'></i>
+    </div>
+    <a href="#" class="nav__logo">Roberto Carlo</a>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#featured" class="nav__link">Featured</a></li>
+        <li class="nav__item"><a href="#collection" class="nav__link">Collection</a></li>
+        <li class="nav__item"><a href="#women" class="nav__link">Women</a></li>
+        <li class="nav__item"><a href="#new" class="nav__link">New</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+      </ul>
+    </div>
 
-	<!--===== HEADER =====-->
+    <div class="nav__shop">
+      <i class='bx bx-shopping-bag'></i>
+    </div>
+  </nav>
+</header>
 
-	<!--===== SECTION =====-->
-	<!--===== SECTION =====-->
-	<!--===== SECTION =====-->
-	<!--===== SECTION =====-->
-	<!--===== SECTION =====-->
-	<!--===== SECTION =====-->
+<!--===== SECTION HOME =====-->
+<section class="home" id="home">
+  <div class="home__container grid-container">
+    <div class="home__sneaker">
+      <div class="home__shape"></div>
+      <img src="img/imghome.png" alt="" class="home__img">
+    </div>
 
-	<!--===== FOOTER =====-->
+    <div class="home__data">
+      <span class="home__new">New in</span>
+      <h1 class="home__title">BOOST YOUR SPEED <br> XRR - 3000</h1>
+      <p class="home__description">Be like a FLASH ⚡! Spin the ground under your feet </p>
+      <a href="#" class="button">Explore now</a>
+    </div>
+  </div>
 
-	<!-- Ваш скрипт -->
-	<script src="js/common.min.js"></script>
+</section>
+
+
+<!--===== SECTION FEATURED =====-->
+<section class="featured section" id="featured">
+  <h2 class="section-title">FEATURED</h2>
+  <div class="featured__container grid-container">
+
+    <article class="sneaker">
+      <div class="sneaker__sale">Sale</div>
+      <img src="img/featured1.png" alt="" class="sneaker__img">
+      <span class="sneaker__name">Martini</span>
+      <span class="sneaker__price">$144.22</span>
+      <a href="#" class="button-light">Add to cart
+        <i class='bx bxs-right-arrow-alt  button-icon'></i>
+      </a>
+    </article>
+
+    <article class="sneaker">
+      <div class="sneaker__sale">Sale</div>
+      <img src="img/featured2.png" alt="" class="sneaker__img">
+      <span class="sneaker__name">Marco Antonio</span>
+      <span class="sneaker__price">$324.12</span>
+      <a href="#" class="button-light">Add to cart
+        <i class='bx bxs-right-arrow-alt  button-icon'></i>
+      </a>
+    </article>
+
+    <article class="sneaker">
+      <div class="sneaker__sale">Sale</div>
+      <img src="img/featured3.png" alt="" class="sneaker__img">
+      <span class="sneaker__name">Drupe</span>
+      <span class="sneaker__price">$47.62</span>
+      <a href="#" class="button-light">Add to cart
+        <i class='bx bxs-right-arrow-alt button-icon'></i>
+      </a>
+    </article>
+
+  </div>
+</section>
+
+
+<!--===== SECTION COLLECTION=====-->
+<section class="collection section" id="collection">
+  <div class="collection__container grid-container">
+    <div class="collection__card">
+      <div class="collection__data">
+        <h3 class="collection__name">Nike</h3>
+        <p class="collection__description">New collection 2021</p>
+        <a href="" class="button-light">Buy now <i class='bx bxs-right-arrow-alt button-icon'></i></a>
+      </div>
+      <img src="img/collection1.png" alt="" class="collection__img">
+    </div>
+    <div class="collection__card">
+      <div class="collection__data">
+        <h3 class="collection__name">Adidas</h3>
+        <p class="collection__description">New collection 2021</p>
+        <a href="" class="button-light">Buy now <i class='bx bxs-right-arrow-alt button-icon'></i></a>
+      </div>
+      <img src="img/collection2.png" alt="" class="collection__img">
+    </div>
+  </div>
+</section>
+
+
+<!--===== SECTION WOMEN SNEAKERS =====-->
+<section class="women section" id="women">
+  <h2 class="section-title">WOMEN SNEAKERS</h2>
+
+  <div class="women__container grid-container">
+    <article class="sneaker">
+      <img src="img/women1.png" alt="" class="sneaker__img">
+      <span class="sneaker__name">Nike BBS</span>
+      <span class="sneaker__price">$47.62</span>
+      <a href="#" class="button-light">Add to cart
+        <i class='bx bxs-right-arrow-alt button-icon'></i>
+      </a>
+    </article>
+
+    <article class="sneaker">
+      <img src="img/women2.png" alt="" class="sneaker__img">
+      <span class="sneaker__name">Nike XZ</span>
+      <span class="sneaker__price">$40.51</span>
+      <a href="#" class="button-light">Add to cart
+        <i class='bx bxs-right-arrow-alt button-icon'></i>
+      </a>
+    </article>
+
+    <article class="sneaker">
+      <img src="img/women3.png" alt="" class="sneaker__img">
+      <span class="sneaker__name">Nike Fly</span>
+      <span class="sneaker__price">$22.52</span>
+      <a href="#" class="button-light">Add to cart
+        <i class='bx bxs-right-arrow-alt button-icon'></i>
+      </a>
+    </article>
+
+    <article class="sneaker">
+      <img src="img/women4.png" alt="" class="sneaker__img">
+      <span class="sneaker__name">Nike Dream SE</span>
+      <span class="sneaker__price">$54.22</span>
+      <a href="#" class="button-light">Add to cart
+        <i class='bx bxs-right-arrow-alt button-icon'></i>
+      </a>
+    </article>
+  </div>
+</section>
+
+
+<!--===== SECTION OFFER =====-->
+<section class="offer section">
+  <div class="offer__container grid-container">
+    <div class="offer__data">
+      <h3 class="offer__title">50% OFF</h3>
+      <p class="offer__description">Adidas super light sneakers</p>
+      <a href="" class="button">Shop Now</a>
+    </div>
+
+    <img src="img/offert.png" alt="" class="offer__img">
+  </div>
+</section>
+
+
+<!--===== SECTION NEW COLLECTION =====-->
+<section class="new section" id="new">
+  <h2 class="section-title">New Collection</h2>
+  <div class="new__container grid-container">
+    <div class="new__mens">
+      <img src="img/new1.png" alt="" class="new__mens-img">
+      <h3 class="new__title">Mens Shoes</h3>
+      <span class="new__price">From $44.44</span>
+      <a href="#" class="button-light">View Collection <i class='bx bxs-right-arrow-alt button-icon'></i></a>
+    </div>
+
+    <div class="new__sneaker">
+      <div class="new__sneaker-card">
+        <img src="img/new2.png" alt="" class="new__sneaker-img">
+        <div class="new__sneaker-overlay">
+          <div class="button">Add to cart</div>
+        </div>
+      </div>
+
+      <div class="new__sneaker-card">
+        <img src="img/new3.png" alt="" class="new__sneaker-img">
+        <div class="new__sneaker-overlay">
+          <div class="button">Add to cart</div>
+        </div>
+      </div>
+
+      <div class="new__sneaker-card">
+        <img src="img/new4.png" alt="" class="new__sneaker-img">
+        <div class="new__sneaker-overlay">
+          <div class="button">Add to cart</div>
+        </div>
+      </div>
+
+      <div class="new__sneaker-card">
+        <img src="img/new5.png" alt="" class="new__sneaker-img">
+        <div class="new__sneaker-overlay">
+          <div class="button">Add to cart</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--===== SECTION NEWSLETTER =====-->
+<section class="newsletter section">
+  <div class="newsletter__container grid-container">
+    <div>
+      <h3 class="newsletter__title">Subscribe and get <BR> 10% OFF</h3>
+      <p class="newsletter__description">Get gifts and 10% discount for all productions!</p>
+    </div>
+
+    <form action="" class="newsletter__subscribe">
+      <input type="text" class="newsletter__input" placeholder="@email.com">
+      <a href="#" class="button">Subscribe</a>
+    </form>
+  </div>
+</section>
+
+<!--===== FOOTER =====-->
+<footer class="footer section">
+  <div class="footer__container grid-container">
+    <div class="footer__box">
+      <h3 class="footer__title">Roby</h3>
+      <p class="footer__description">New collection of shoes 2021</p>
+    </div>
+
+    <div class="footer__box">
+      <h3 class="footer__title">EXPLORE</h3>
+      <ul>
+        <li><a href="#home" class="footer__link">Home</a></li>
+        <li><a href="#featured" class="footer__link">Featured</a></li>
+        <li><a href="#women" class="footer__link">Women</a></li>
+        <li><a href="#new" class="footer__link">New</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__box">
+      <h3 class="footer__title">SUPPORT</h3>
+      <ul>
+        <li><a href="#home" class="footer__link">Product Help</a></li>
+        <li><a href="#featured" class="footer__link">Customer Care</a></li>
+        <li><a href="#women" class="footer__link">Athorized service</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__box">
+      <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+      <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+      <a href="#" class="footer__social"><i class='bx bxl-vk'></i></a>
+      <a href="#" class="footer__social"><i class='bx bxl-youtube'></i></a>
+    </div>
+  </div>
+  <p class="footer__copy">&#169; 2021 G.A.S production. All right reserved.</p>
+</footer>
+<!-- Ваш скрипт -->
+<script src="js/common.min.js"></script>
 
 </body>
 </html>
